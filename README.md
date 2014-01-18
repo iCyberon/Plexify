@@ -1,7 +1,7 @@
 Plexify
 =======
 
-Plexfy utility. Control PlexConnect easily.
+This is a slightly modified version of the binary. Specifiaclly, I cleaned up code and changed several libraries which I prepared for 1.1 Final. Additionally, you'll need to get Objective-Git.
 
 ## License
 
