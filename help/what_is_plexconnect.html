@@ -1,0 +1,95 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>
+	<meta charset="utf-8" />  
+	<title>Plexify</title>
+	<style type="text/css">
+		* {
+			background: transparent;
+			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+		}
+
+		body {
+			margin: 4px;
+			padding: 0;
+			font-size: 13px;
+			color: #555;
+			line-height: 150% !important;
+		}
+
+		hr {
+			background-color: #CCC;
+			width: 100%;
+			height: 1px;
+			border: none;
+		}
+
+		.header {
+			font-size: 16px;
+			font-weight: 500;
+			font-weight: bold;
+			font-family: "Lucida Grande", sans-serif; 
+		}
+
+		.pg {
+			font-size: 14px;
+			font-family: "Lucida Grande", sans-serif; 
+			display: block;
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+	
+		.pg2 {
+			font-size: 13px;
+			font-family: "Lucida Grande", sans-serif;
+			display: block;
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+
+		a,a:hover,a:active,a:focus {
+			text-decoration: none;
+			color: #555;
+		}
+
+		.dotted {
+			border-bottom: 1px dashed #ccc;
+		}
+
+		ul {
+			padding: 0px;
+			list-style: none;
+		}
+
+		.italic {
+			font-style: italic;
+		}
+
+		.back {
+			font-size: 10px;
+			border: 1px solid #CCC;
+			border-radius: 4px;
+			padding: 4px;
+		}
+	</style>
+</head>  
+<body>
+	<span class="header"> <a class="back" href="help_index.html">❰ BACK</a> What is PlexConnect?</span>
+	<hr>
+	<span class="pg2">We all want the pleasure of Plex on the big screen - in this case driven by an AppleTV, unfortunately:<br/><br/></span>
+	• There is no App Store for the AppleTV.<br/>
+	• It is not currently possible to jailbreak the AppleTV3<br/>
+	• Only certain firmwares on the AppleTV2 have an untethered jailbreak (the current firmware does not)<br/>
+	It is not possible to move between AppleTV2 firmwares unless the user has previously used a tool to specifically save unique signatures for their device<br/>
+	<span class="pg2">How does it work?
+	The basic idea is, to:</span>
+	• re-use a native AppleTV app (in this case Apple Trailers)<br/>
+	• re-route the Trailers app requests to your local Plex Media Server<br/>
+	• re-work the reply to fit into AppleTV's XML communication scheme<br/>
+	• let iOS do the rest<br/>
+	• enjoy Plex on your unmodified AppleTV<br/>
+	<span class="pg2">Disclaimer</span>
+	The software is provided as is. It might work as expected - or not. Just don't blame us.
+</body>
+</html>

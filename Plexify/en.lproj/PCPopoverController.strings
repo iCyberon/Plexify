@@ -1,0 +1,15 @@
+
+/* Class = "NSButtonCell"; title = "Restart"; ObjectID = "5PA-qn-QrH"; */
+"5PA-qn-QrH.title" = "Restart";
+
+/* Class = "NSButtonCell"; title = "Settings"; ObjectID = "HAi-tp-OPa"; */
+"HAi-tp-OPa.title" = "Settings";
+
+/* Class = "NSTextFieldCell"; title = "Not Running"; ObjectID = "fpX-K3-5E3"; */
+"fpX-K3-5E3.title" = "Not Running";
+
+/* Class = "NSButtonCell"; title = "Start"; ObjectID = "xKb-XB-3uE"; */
+"xKb-XB-3uE.title" = "Start";
+
+/* Class = "NSButtonCell"; title = "Quit"; ObjectID = "zWb-W4-Gy0"; */
+"zWb-W4-Gy0.title" = "Quit";

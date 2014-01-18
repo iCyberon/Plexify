@@ -1,0 +1,33 @@
+
+/* Class = "NSMenu"; title = "AMainMenu"; ObjectID = "29"; */
+"29.title" = "AMainMenu";
+
+/* Class = "NSMenuItem"; title = "PlexConnect"; ObjectID = "56"; */
+"56.title" = "PlexConnect";
+
+/* Class = "NSMenu"; title = "PlexConnect"; ObjectID = "57"; */
+"57.title" = "PlexConnect";
+
+/* Class = "NSMenuItem"; title = "About PopOverMenulet"; ObjectID = "58"; */
+"58.title" = "About PopOverMenulet";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "129"; */
+"129.title" = "Preferences…";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "130"; */
+"130.title" = "Services";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "131"; */
+"131.title" = "Services";
+
+/* Class = "NSMenuItem"; title = "Hide PopOverMenulet"; ObjectID = "134"; */
+"134.title" = "Hide PopOverMenulet";
+
+/* Class = "NSMenuItem"; title = "Quit PopOverMenulet"; ObjectID = "136"; */
+"136.title" = "Quit PopOverMenulet";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "145"; */
+"145.title" = "Hide Others";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "150"; */
+"150.title" = "Show All";

@@ -1,0 +1,141 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>
+	<meta charset="utf-8" />  
+	<title>Plexify</title>
+	<style type="text/css">
+		* {
+			background: transparent;
+			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+		}
+
+		body {
+			margin: 4px;
+			padding: 0;
+			font-size: 13px;
+			color: #555;
+			line-height: 150% !important;
+		}
+
+		hr {
+			background-color: #CCC;
+			width: 100%;
+			height: 1px;
+			border: none;
+		}
+
+		.header {
+			font-size: 16px;
+			font-weight: 500;
+			font-weight: bold;
+			font-family: "Lucida Grande", sans-serif; 
+		}
+
+		.pg {
+			font-size: 14px;
+			font-family: "Lucida Grande", sans-serif; 
+			display: block;
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+	
+		.pg2 {
+			font-size: 13px;
+			font-family: "Lucida Grande", sans-serif;
+			display: block;
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+
+		a,a:hover,a:active,a:focus {
+			text-decoration: none;
+			color: #555;
+		}
+
+		.dotted {
+			border-bottom: 1px dashed #ccc;
+		}
+
+		ul {
+			padding: 0px;
+			list-style: none;
+		}
+
+		.italic {
+			font-style: italic;
+		}
+
+		.back {
+			font-size: 10px;
+			border: 1px solid #CCC;
+			border-radius: 4px;
+			padding: 4px;
+		}
+	</style>
+</head>  
+<body>
+	<span class="header"> <a class="back" href="help_index.html">❰ BACK</a> Troubleshooting</span>
+	<hr>
+	<span class="pg">Overview</span>
+	PlexConnect is designed to now work out of the box on most configurations; it will use GDM to auto discover the IP of your Plex Media Server (PMS) and it will use Google's DNS server (8.8.8.8) to resolve any non-PlexConnect URL's for the aTV. The install guides have been updated to reflect this but there are circumstances where either users want to have more control or need to manually configure settings to prevent issues. This is done through editing a file named settings.cfg, which is created the first time that you run and then cleanly shutdown PlexConnect (press CTRL-C when the terminal or CMD window is focused and wait for the processes to be stopped and the command prompt to return).
+	<br/>
+	• Do not edit Settings.cfg unless you either understand what you are doing or have been instructed to do so (although you can always trash it and a new default one will be automatically generated).
+	<br/>
+	• Do not edit the Settings.py file, with the introduction of Settings.cfg this file should not be edited by users any more.
+	<br/>
+	<span class="pg">PlexGDM</span>
+	<span class="pg2">Disabling GDM auto discovery protocol</span>
+	<br/>
+	GDM is used to auto discover your PMS server, if you are having issues with it showing the wrong IP and you know what you are doing then you can disable this by editing the following line to show 'False'. You must then manually set your IP (and port if using a non-standard one). We are aware of an issue where GDM may get confused if you are running VmWare; the symptoms are that you cannot see your content thumbnails and content will not play, disabling GDM and setting a manual IP has been shown to resolve this particular issue.
+	<br/>
+	enable_plexgdm = True
+	<br/>
+	ip_pms = 192.168.178.10
+	<br/>
+	port_pms = 32400
+	<br/>
+	<span class="pg">DNSServer</span>
+	<span class="pg2">Disabling the PlexConnect DNS server to use your own</span>
+	We now have an option for you to disable the PlexConnect DNS server to use your own, e.g. if you are running a server operating system. Please edit the following line to show 'False' and setup the necessary routing for trailers.apple.com in your DNS server:
+	<br/>
+	enable_dnsserver = True
+	<br/>
+	<span class="pg2">Using you ISP's or Gateway's DNS server on the ATV instead of Google's</span>
+	PlexConnect is setup by default to use Google's public DNS server, however you may wish to change this to that of your gateway or ISP DNS server by editing the following line:
+	<br/>
+	ip_dnsmaster = 8.8.8.8
+	<br/>
+	Google's server works fine for PlexConnect but if you use the other inbuilt ATV applications you may wish to change it so that the content delivery networks serving up e.g. Netflix can tell your geographic location and serve the content from their nearest location.
+	<br/>
+	<span class="pg2">Prevent automatic aTV iOS updates</span>
+	Disallow aTV to call home and check for updates:
+	<br/>
+	prevent_atv_update = True
+	<br/>
+	<span class="pg">WebServer</span>
+	<span class="pg2">Manual Override to PlexConnect's IP</span>
+
+	In some environments PlexConnect is unable to figure out the local IP address of its host system. You can disable the auto detect feature by editing the following lines, specifying your local IP address.
+	<br/>
+	enable_plexconnect_autodetect = True
+	<br/>
+	ip_plexconnect = 0.0.0.0
+	<br/>
+	<span class="pg2">Disabling the PlexConnect web server to use your own</span>
+	We now have an option for you to disable the PlexConnect web server to use your own, e.g. Apache or IIS. Please edit the following lines and then configure your web server accordingly:
+	<br/>
+	ip_webserver = 0.0.0.0
+	<br/>
+	port_webserver = 80
+	<br/>
+	<span class="pg">Misc</span>
+	<span class="pg2">Log &amp; Debug</span>
+	Modify the logging behavior or change the path to PlexConnect.log (note that the loglevel setting is case sensitive).
+	<br/>
+	loglevel = Normal loglevel = High loglevel = Off
+	<br/>
+	logpath = .
+	<br/>
+</body>
+</html>

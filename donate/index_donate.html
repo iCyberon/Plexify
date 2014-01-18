@@ -1,0 +1,87 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>
+	<meta charset="utf-8" />  
+	<title>Plexify</title>
+	<style type="text/css">
+		* {
+			background: transparent;
+			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+		}
+
+		body {
+			width: 100%;
+			margin: 4px;
+			padding: 0;
+			font-size: 13px;
+			color: #555;
+			line-height: 150% !important;
+		}
+
+		form {
+			margin: 0 auto;
+			width: 220px;
+			text-align: center;
+		}
+
+		table {
+			margin: 0 auto;
+			padding: 0 0 10px 0;
+		}
+
+		select {
+		    padding:6px 20px;
+		    margin: 0;
+		    -webkit-border-radius:4px;
+		    -moz-border-radius:4px;
+		    border-radius:4px;
+		    border: 1px solid #CCC;
+		    background: #f8f8f8;
+		    color:#888;
+		    outline:none;
+		    display: inline-block;
+		    -webkit-appearance:none;
+		    -moz-appearance:none;
+		    appearance:none;
+		    cursor:pointer;
+		}
+
+		span {
+			margin: 0 auto;
+			width: 230px;
+			display: block;
+			text-align: center;
+		}
+		hr {
+		    border: 0;
+		    height: 1px;
+		    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.4), rgba(0,0,0,0)); 
+		    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.4), rgba(0,0,0,0)); 
+		    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.4), rgba(0,0,0,0)); 
+		    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.4), rgba(0,0,0,0));
+		    width: 300px;
+		}
+	</style>
+</head>  
+<body>
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+		<input type="hidden" name="cmd" value="_s-xclick">
+		<input type="hidden" name="hosted_button_id" value="EM3NJY4SYGMVN">
+		<table>
+		<tr><td><input type="hidden" name="on0" value=""Thank You" Packages"></td></tr><tr><td><select name="os0">
+			<option value="Starter">Starter $5.00 USD</option>
+			<option value="Regular">Regular $15.00 USD</option>
+			<option value="Plus">Plus $40.00 USD</option>
+			<option value="Enterprise">Enterprise $100.00 USD</option>
+		</select> </td></tr>
+		</table>
+		<input type="hidden" name="currency_code" value="USD">
+		<input type="image" src="paypal.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+	</form>
+	<hr/>
+	<span><a href="http://load.payoneer.com/LoadToPage.aspx" target="_blank"><img src="payoneer.png" /></a></span>
+	<span><em>Send To: vahagn.mkrtchyan@gmail.com</em></span>
+</body>
+</html>

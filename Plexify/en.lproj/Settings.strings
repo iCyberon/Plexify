@@ -1,0 +1,21 @@
+
+/* Class = "NSWindow"; title = "Preferences"; ObjectID = "1"; */
+"1.title" = "Preferences";
+
+/* Class = "NSTextFieldCell"; title = "/Users/VAM/Documents/Plex/"; ObjectID = "6"; */
+"6.title" = "Plex directory";
+
+/* Class = "NSButtonCell"; title = "Launch PlexConnect at Startup"; ObjectID = "13"; */
+"13.title" = "Launch PlexConnect at Startup";
+
+/* Class = "NSButtonCell"; title = "Choose Plex"; ObjectID = "50"; */
+"50.title" = "Choose Plex";
+
+/* Class = "NSButtonCell"; title = "Open Log"; ObjectID = "71"; */
+"71.title" = "Open Log";
+
+/* Class = "NSTextFieldCell"; title = "Developed by Vahagn (Cyberon)"; ObjectID = "95"; */
+"95.title" = "Developed by Vahagn (Cyberon)";
+
+/* Class = "NSTextFieldCell"; title = "specifically for InMac.org"; ObjectID = "111"; */
+"111.title" = "specifically for InMac.org";

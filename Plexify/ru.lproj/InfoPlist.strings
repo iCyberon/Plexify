@@ -1,0 +1,9 @@
+/* Localized versions of Info.plist keys */
+"Welcome to PlexConnect" = "Welcome to PlexConnect";
+"Please choose PlexConnect root directory" = "Please choose PlexConnect root directory";
+"PlexConnect directory is not set" = "PlexConnect directory is not set";
+"Please choose PlexConnect root directory from settings" = "Please choose PlexConnect root directory from settings";
+"Running" = "Running";
+"Stop" = "Stop";
+"Not Running" = "Not Running";
+"Start" = "Start";
