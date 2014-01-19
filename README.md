@@ -5,6 +5,10 @@ This is a slightly modified version of the binary. Specifiaclly, I cleaned up co
 
 The code is not final, the only purpose is to show how it works.
 
+## Download
+
+You can get the compiled version from here: [Plexify 1.1 RC.dmg](http://cl.ly/0V1f3M2x1M26)
+
 ## License
 
 Plexify is available under the RecEx Shared Source License. See the LICENSE file for more info.
