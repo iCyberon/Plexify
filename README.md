@@ -11,4 +11,4 @@ You can get the compiled version from here: [Plexify 1.1 RC.dmg](http://cl.ly/0V
 
 ## License
 
-Plexify is available under the RecEx Shared Source License. See the LICENSE file for more info.
+Plexify is available under the GPL License. See the LICENSE file for more info.
